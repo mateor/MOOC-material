@@ -5218,17 +5218,19 @@ public static int addThreeAndReturn(int incremented) {
 
 <pre class="sh_java">
  
-    ArrayList&lt;Integer&gt; numbers = new ArrayList&lt;Integer&gt;(); 
-    numbers.add(4); 
-    numbers.add(3); 
-    numbers.add(7); 
-    numbers.add(3); 
+    public static void main(String[] args) { 
+        ArrayList&lt;Integer&gt; numbers = new ArrayList&lt;Integer&gt;(); 
+        numbers.add(4); 
+        numbers.add(3); 
+        numbers.add(7); 
+        numbers.add(3); 
 
-    System.out.println(numbers); // prints [4,3,7,3] 
+        System.out.println(numbers); // prints [4,3,7,3] 
 
-    removeFirst(numbers); 
+        removeFirst(numbers); 
 
-    System.out.println(numbers); // prints [3,7,3] 
+        System.out.println(numbers); // prints [3,7,3] 
+    }
 </pre>
 
                 <p>Unlike a parameter of <code>int</code> type, a list will not be copied and therefore the method
