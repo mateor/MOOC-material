@@ -6956,8 +6956,8 @@ Brian: The card has 73.5 euros
 
 <pre class="sh_java">
     public static void main(String[] args) {
-        Person matti = new Henkilo("Matti");
-        Person john = new Henkilo("John");
+        Person matti = new Person("Matti");
+        Person john = new Person("John");
 
         matti.setHeight(180);
         matti.setWeight(86);
@@ -8356,7 +8356,7 @@ Pekka, age 35 years
         System.out.println( pekka );
 
         Person person = pekka;
-        henkilo.becomeOlder(25);
+        person.becomeOlder(25);
 
         System.out.println( pekka );
     }
@@ -8375,7 +8375,7 @@ Pekka, age 49 years
 
             <p>The command <code>Person person = pekka;</code> makes it so that <code>person</code> begins to refer to
             the same object that <code>pekka</code> refers to. So a copy of the object isn't born, but instead both
-            of the variables refer to the same object. With the command <code>Person henkilo = pekka;</code> a <em>copy
+            of the variables refer to the same object. With the command <code>Person person = pekka;</code> a <em>copy
             of the wire</em> is born. As a picture (Note: in the picture p refers to the variable pekka, and h to the
             variable person in the main program. The variable names have also been abbreviated in some of the following
             pictures.):</p>
@@ -8393,7 +8393,7 @@ Pekka, age 49 years
         System.out.println( pekka );
 
         Person person = pekka;
-        henkilo.becomeOlder(25);
+        person.becomeOlder(25);
 
         System.out.println( pekka );
 
@@ -8425,7 +8425,7 @@ Pekka Mikkola, age 24 years
         System.out.println( pekka );
 
         Person person = pekka;
-        henkilo.becomeOlder(25);
+        person.becomeOlder(25);
 
         System.out.println( pekka );
 
@@ -8465,7 +8465,7 @@ null
         System.out.println( pekka );
 
         Person person = null;
-        System.out.println( henkilo.weightIndex() );
+        System.out.println( person.weightIndex() );
     }
 </pre>
 
@@ -11565,7 +11565,7 @@ public class Main {
     }
 
     private static void reportMaturity(Person person) {
-        if ( henkilo.isAdult() ) {
+        if ( person.isAdult() ) {
             System.out.println(person.getName() + " is an adult");
         } else {
             System.out.println(person.getName() + " is a minor");
