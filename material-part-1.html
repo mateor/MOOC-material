@@ -9470,7 +9470,8 @@ public class Clock {
     private BoundedCounter seconds;
 
     public Clock(int hoursAtBeginning, int minutesAtBeginning, int secondsAtBeginning) {
-      // the counters that represent hours, minutes and seconds are created and set to have the correct initial values
+      // the counters that represent hours, minutes and seconds are created and
+      // set to have the correct initial values
     }
 
     public void tick(){
@@ -9900,7 +9901,8 @@ public Counter {
   }
 
   public Counter clone(){
-     // lets create a new counter object, that gets as its initial value the value of the counter that is being cloned
+     // lets create a new counter object, that gets as its initial value 
+     // the value of the counter that is being cloned
      Counter clone = new Counter(this.value);
 
      // return the clone to the caller
