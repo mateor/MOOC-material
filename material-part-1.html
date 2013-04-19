@@ -7429,7 +7429,7 @@ public class NumberStatistics {
         // initialize here the object variable amountOfNumbers
     }
 
-    public void addnumber(int luku) {
+    public void addnumber(int number) {
         // code here
     }
 
@@ -11378,24 +11378,24 @@ Number of stars: 3
 <pre class="sh_java">
 public class Program {
 
-  public static void resetArray(int[] taulukko) {
-    for ( int i=0; i &lt; taulukko.length; i++ )
-      taulukko[i] = 0;
+  public static void resetArray(int[] table) {
+    for ( int i=0; i &lt; table.length; i++ )
+      table[i] = 0;
   }
 
   public static void main(String[] args) {
     int[] values = { 1, 2, 3, 4, 5 };
 
-    for ( int luku : values ) {
-      System.out.print( luku + " " );  // tulostuu 1, 2, 3, 4, 5
+    for ( int number : values ) {
+      System.out.print( number + " " );  // prints 1, 2, 3, 4, 5
     }
 
     System.out.println();
 
     resetArray(t);
 
-    for ( int luku : values ) {
-      System.out.print( luku + " " );  // tulostuu 0, 0, 0, 0, 0
+    for ( int number : values ) {
+      System.out.print( number + " " );  // prints 0, 0, 0, 0, 0
     }
   }
 }
@@ -11429,7 +11429,7 @@ public class Program {
     ArrayHandling.resetArray(values);
 
     for ( int value : values ) {
-      System.out.print( luku + " " );  // prints: 0, 0, 0, 0, 0
+      System.out.print( number + " " );  // prints: 0, 0, 0, 0, 0
     }
   }
 }
