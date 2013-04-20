@@ -111,7 +111,7 @@ System.out.println("Hello world!");
             <code>java Hello</code> where Hello is the name of the original source code file.</p>
 
             <p>When using a modern development environment (more on this later), it will take care of compiling the
-            source code. When we choose to run the program, rhw development environment will compile and execute the
+            source code. When we choose to run the program, the development environment will compile and execute the
             program. All development environments compile source code while it is being written by the programmer,
             which means that simple errors will be noticed before executing the program.</p>
 
@@ -476,7 +476,8 @@ int camelCase = 5; // Not allowed, the variable camelCase is already defined!
 <pre class="sh_java">
 int first = 2;   // variable of whole number type is assigned the value 2
 int second = 4;  // variable of whole number type is assigned the value 4
-int sum = first + second;  // variable of whole number type is assigned the value of first + second (which means 2 + 4)
+int sum = first + second;  // variable of whole number type is assigned the value of first + second
+                           //     (which means 2 + 4)
 
 System.out.println(sum); // the value of the variable sum is printed
 </pre>
@@ -732,7 +733,8 @@ public class ProgramBody {
 
 <pre class="sh_java">
 System.out.print("What is your name? ");
-String name = reader.nextLine(); // Reads a line of input from the user and assigns it to the variable called name
+String name = reader.nextLine(); // Reads a line of input from the user and assigns it 
+                                 //     to the variable called name
 
 System.out.println("Hi, " + name);
 </pre>
@@ -755,7 +757,8 @@ public class Greeting {
     Scanner reader = new Scanner(System.in);
 
     System.out.print("Who is greeted: ");
-    String nimi = reader.nextLine(); // Reads a line of input from the user and assigns it to the variable called name
+    String nimi = reader.nextLine(); // Reads a line of input from the user and assigns it 
+                                     //     to the variable called name
 
     System.out.print("Hi " + name);
   }
